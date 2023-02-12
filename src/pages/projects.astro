@@ -36,22 +36,25 @@ const sortedProjects = projects
             <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] mb-3 md:gap-2 items-start">
               <div class="title">
                 <a
-                  href={project.frontmatter.url}
-                  target="_blank"
+                  href={`/projects/${project.slug}`}
                   class="unset
-                      transition-[background-size] duration-300 
+                      transition-[background-size] duration-300
                       bg-gradient-to-r bg-left-bottom bg-no-repeat
                       bg-[length:0%_55%] hover:bg-[length:100%_55%] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px]
                       from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue
                     "
                 >
                   <span>{project.frontmatter.title}</span>
+                </a>
+              </div>
+              <div class="text-text-muted text-sm italic pt-1">
+                <a href={project.frontmatter.url} target="_blank" class="unset">
+                  Visit
                   <span>
                     <i class="ml-1 mr-1 text-[12px] pb-2 fa-solid fa-up-right-from-square" />
                   </span>
                 </a>
-              </div>
-              <div class="text-text-muted text-sm italic pt-1">
+                -
                 <time datetime={project.frontmatter.date.toISOString()}>
                   {formattedDate}
                 </time>

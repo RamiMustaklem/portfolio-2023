@@ -1,6 +1,6 @@
 ---
 import { readOne, readAll } from "../../lib/markdoc/read";
-import { blog } from "../../lib/markdoc/frontmatter.schema";
+import { project } from "../../lib/markdoc/frontmatter.schema";
 import Renderer from "../../components/Renderer.astro";
 import BlogPostMeta from "../../components/BlogPostMeta.astro";
 import ContentLayout from "../../layouts/ContentLayout.astro";
@@ -9,14 +9,13 @@ import PageMeta from "src/components/PageMeta.astro";
 
 export async function getStaticPaths() {
   const posts = await readAll({
-    directory: "blog",
-    frontmatterSchema: blog,
+    directory: "projects",
+    frontmatterSchema: project,
   });
 
   // we don't want to generate pages for posts that link to external websites
   const filteredPosts = posts
-    .filter((p) => p.frontmatter.draft !== true)
-    .filter(({ frontmatter }) => !frontmatter.external);
+    .filter((p) => p.frontmatter.draft !== true);
 
   return filteredPosts.map((post) => {
     return { params: { slug: post.slug } };
@@ -29,15 +28,13 @@ if (typeof slug !== "string") {
 }
 
 const { content, frontmatter } = await readOne({
-  directory: "blog",
+  directory: "projects",
   slug,
-  frontmatterSchema: blog,
+  frontmatterSchema: project,
 });
 
-const tags = (!frontmatter.external && frontmatter.tags) || undefined;
-
 const ogImageAbsoluteUrl =
-  frontmatter.external !== true && frontmatter.ogImagePath
+  frontmatter.ogImagePath
     ? new URL(frontmatter.ogImagePath, SITE_URL).toString()
     : undefined;
 ---
@@ -46,14 +43,14 @@ const ogImageAbsoluteUrl =
   title={frontmatter.title}
   date={frontmatter.date}
   duration={frontmatter.duration}
-  tags={tags}
+  tags={frontmatter.tags}
 >
-  <PageMeta title={`${frontmatter.title} | Blog | ${SITE_TITLE}`} slot="meta" />
+  <PageMeta title={`${frontmatter.title} | Projects | ${SITE_TITLE}`} slot="meta" />
   <BlogPostMeta
     title={frontmatter.title}
-    description={frontmatter.external ? undefined : frontmatter.description}
+    description={frontmatter.description}
     publishDate={frontmatter.date.toISOString()}
-    pagePath={`/blog/${slug}`}
+    pagePath={`/projects/${slug}`}
     ogImageAbsoluteUrl={ogImageAbsoluteUrl}
     slot="meta"
   />

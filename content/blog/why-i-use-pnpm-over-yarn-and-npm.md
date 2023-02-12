@@ -6,6 +6,13 @@ description: Stands for “Performant NPM”, which was made specifically to sav
 date: 2023-02-10
 author: Rami Mustaklem
 duration: 4 min read
+tags:
+  - PNPM
+  - NPM
+  - YARN
+  - Performance
+  - Efficiency
+  - Security
 ---
 
 ## Introduction
@@ -38,14 +45,14 @@ Stands for “Performant NPM”, which was made specifically to save disk space 
 
 > PNPM is up to 2x faster than the alternatives.
 
-![PNPM performance stats vs yarn and npm](/images/pnpm-chart.svg)
+![PNPM performance stats vs yarn and npm](/images/blog/pnpm-chart.svg)
 *[PNPM performance stats vs yarn and npm](https://pnpm.io/benchmarks#lots-of-files)*
 
 Explaining on their website as to why PNPM is this fast, to answer the question, it’s because PNPM does not have blocking stages of installation. Each dependency has its own stages and the next stage starts as soon as possible. To explain, each package has 3 stages, resolving, fetching and writing. Basically each package installation does not block other packages, as soon as a package is fetched over the wire, the installation starts, and doesn’t wait for previous packages to finish before starting.
 
 When you use PNPM to install packages from your `package.json` file, what PNPM does is that it caches all those node_modules to a single content storage on your disk and shares these packages between projects. If 2 projects share the same package version, then these 2 projects use the same installed package on disk, and it is linked to the node_modules directory of your project without the need to duplicate and copy all packages to each project.
 
-![PNPM reusing a lot of already installed packages](/images/pnpm-installations.png)
+![PNPM reusing a lot of already installed packages](/images/blog/pnpm-installations.png)
 *A snippet of PNPM reusing a lot of already installed packages*
 
 PNPM has a `non-flat` node_modules structure by default, which also means that if a project installs package A, package A installs package B in order to function, package B is linked inside package A and has access only to package A.

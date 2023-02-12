@@ -8,7 +8,7 @@ author: Rami Mustaklem
 duration: 2 min read
 ---
 
-![React useState hook](/images/ferenc-almasi-ayjnmG4oUX4-unsplash.jpg)
+![React useState hook](/images/blog/ferenc-almasi-ayjnmG4oUX4-unsplash.jpg)
 
 Each update in a react component causes the whole component to re-render. Imagine you have a form with a few inputs, like name, age and date of birth. When you use the onChange input attribute to track the input value into a component state, the onChange updates the state and thus the whole component re-renders to update the input value, and so on.
 
