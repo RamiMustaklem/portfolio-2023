@@ -48,13 +48,15 @@ const sortedProjects = projects
                 </a>
               </div>
               <div class="text-text-muted text-sm italic pt-1">
-                <a href={project.frontmatter.url} target="_blank" class="unset">
-                  Visit
-                  <span>
-                    <i class="ml-1 mr-1 text-[12px] pb-2 fa-solid fa-up-right-from-square" />
-                  </span>
-                </a>
-                -
+                {project.frontmatter.url && (
+                  <a href={project.frontmatter.url} target="_blank" class="unset">
+                    Visit
+                    <span>
+                      <i class="ml-1 mr-1 text-[12px] pb-2 fa-solid fa-up-right-from-square" />
+                    </span>
+                    -
+                  </a>
+                )}
                 <time datetime={project.frontmatter.date.toISOString()}>
                   {formattedDate}
                 </time>

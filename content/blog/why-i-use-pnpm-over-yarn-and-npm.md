@@ -13,7 +13,10 @@ tags:
   - Performance
   - Efficiency
   - Security
+ogImagePath: https://i.ytimg.com/vi/WVnsM7Mp3JM/maxresdefault.jpg
 ---
+
+![Why PNPM?](https://i.ytimg.com/vi/WVnsM7Mp3JM/maxresdefault.jpg)
 
 ## Introduction
 

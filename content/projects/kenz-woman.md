@@ -27,7 +27,7 @@ ogImagePath: /public/images/projects/kenz-woman.jpeg
 
 ![Kenz Woman](/public/images/projects/kenz-woman.jpeg)
 
-An E-commerce website, migrated from a barely functional Magento deployment to WordPress/WooCommerce, selling around thousands of Riyals per month.
+[**_Kenz Woman_**](https://kenzwoman.com) is an E-commerce website, migrated from a barely functional Magento deployment to WordPress/WooCommerce, selling around thousands of Riyals per month.
 
 Set it up with Amazon AWS services, using EC2 instance, RDS, S3 and Route 53.
 

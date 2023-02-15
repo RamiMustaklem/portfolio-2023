@@ -4,8 +4,7 @@ import { project } from "../../lib/markdoc/frontmatter.schema";
 import Renderer from "../../components/Renderer.astro";
 import BlogPostMeta from "../../components/BlogPostMeta.astro";
 import ContentLayout from "../../layouts/ContentLayout.astro";
-import { SITE_URL, SITE_TITLE } from "../../config";
-import PageMeta from "src/components/PageMeta.astro";
+import { SITE_URL } from "../../config";
 
 export async function getStaticPaths() {
   const posts = await readAll({
@@ -35,7 +34,11 @@ const { content, frontmatter } = await readOne({
 
 const ogImageAbsoluteUrl =
   frontmatter.ogImagePath
-    ? new URL(frontmatter.ogImagePath, SITE_URL).toString()
+    ? (
+      frontmatter.ogImagePath.includes('https://')
+        ? frontmatter.ogImagePath
+        : new URL(frontmatter.ogImagePath, SITE_URL).toString()
+    )
     : undefined;
 ---
 
@@ -44,8 +47,8 @@ const ogImageAbsoluteUrl =
   date={frontmatter.date}
   duration={frontmatter.duration}
   tags={frontmatter.tags}
+  url={frontmatter.url}
 >
-  <PageMeta title={`${frontmatter.title} | Projects | ${SITE_TITLE}`} slot="meta" />
   <BlogPostMeta
     title={frontmatter.title}
     description={frontmatter.description}

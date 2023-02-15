@@ -5,27 +5,28 @@
 */
 
 // Import the global.css file here so that it is included on
-import "../styles/global.css";
+import '../styles/global.css';
 
-import GoogleFont from "./GoogleFont.astro";
-import FontAwesome from "./FontAwesome.astro";
-import ThemeScript from "./ThemeScript.astro";
-import Favicon from "./Favicon.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import GoogleFont from './GoogleFont.astro';
+import FontAwesome from './FontAwesome.astro';
+import ThemeScript from './ThemeScript.astro';
+import Favicon from './Favicon.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 
 export interface Props {
   title: string;
   date: Date;
   duration?: string;
   tags?: string[];
+  url?: string;
 }
 
-const { title, date, duration, tags } = Astro.props;
-const formattedDate = new Date(date).toLocaleDateString("en-us", {
-  year: "numeric",
-  month: "short",
-  day: "numeric",
+const { title, date, duration, tags, url } = Astro.props;
+const formattedDate = new Date(date).toLocaleDateString('en-us', {
+  year: 'numeric',
+  month: 'short',
+  day: 'numeric',
 });
 ---
 
@@ -43,33 +44,37 @@ const formattedDate = new Date(date).toLocaleDateString("en-us", {
     <FontAwesome />
   </head>
 
-  <body
-    class="max-w-3xl mx-auto min-h-screen px-6 sm:px-8"
-  >
+  <body class="max-w-3xl mx-auto min-h-screen px-6 sm:px-8">
     <Header />
     <main id="main">
       <section class="blog-post prose max-w-none prose-bubblegum">
         <h1 class="m-0 mb-[0.25em]">
-          <span class="
-              pl-6 relative block leading-[150%]
-              after:absolute after:content-[''] after:w-2 after:h-full after:top-0 after:left-0 after:bg-primary-green
-            ">
+          <span
+            class="pl-6 relative block leading-[150%] after:absolute after:content-[''] after:w-2 after:h-full after:top-0 after:left-0 after:bg-primary-green"
+          >
             {title}
           </span>
         </h1>
         <div>
           <time class="block mb-2 text-text-muted">
-            {formattedDate} {duration && `- ${duration}`}
+            {formattedDate}
+            {duration && `- ${duration}`}
           </time>
         </div>
-        {tags?.length && <div class="text-text-muted text-sm">
-          <p class="mb-1">Tags:</p>
-          <div class="w-full flex flex-wrap">
-            {tags.map((t) => (
-              <code class="unset px-2 mr-2 mb-1 text-text-code rounded bg-bg-code text-xs">{t}</code>
-            ))}
-          </div>
-        </div>}
+        {
+          tags?.length && (
+            <div class="text-text-muted text-sm">
+              <p class="mb-1">Tags:</p>
+              <div class="w-full flex flex-wrap">
+                {tags.map((t) => (
+                  <code class="unset px-2 mr-2 mb-1 text-text-code rounded bg-bg-code text-xs">
+                    {t}
+                  </code>
+                ))}
+              </div>
+            </div>
+          )
+        }
         <slot name="content" />
       </section>
     </main>
@@ -78,9 +83,9 @@ const formattedDate = new Date(date).toLocaleDateString("en-us", {
       body {
         display: grid;
         grid-template-areas:
-          "header"
-          "main"
-          "footer";
+          'header'
+          'main'
+          'footer';
         grid-template-rows: 5rem minmax(0, 1fr) 5rem;
         grid-template-columns: minmax(0, 1fr);
       }
