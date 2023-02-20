@@ -20,3 +20,7 @@ ogImagePath: /public/images/projects/ashhab.jpeg
 ---
 
 ![ASHHAB](/public/images/projects/ashhab.jpeg)
+
+Currently in the process of migrating the live site to the new site...
+
+It consists of a main repository, that has a bash file that will clone and install 3 different repositories, API, Admin CMS and the Shop front.
