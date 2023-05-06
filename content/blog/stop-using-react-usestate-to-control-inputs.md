@@ -1,6 +1,5 @@
 ---
 external: false
-draft: true
 title: Stop using React useState to control inputs
 description: React useState hook causes its container component to re-render on every change, and that's what happens when an input is controlled by a useState and onChange
 date: 2023-02-20

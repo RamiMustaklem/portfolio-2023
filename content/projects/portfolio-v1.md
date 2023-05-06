@@ -18,10 +18,11 @@ tags:
   - Heroku
   - Cloudinary
   - Cloudflare
-ogImagePath: /public/images/projects/portfolio-v1.jpeg
+ogImagePath: https://res.cloudinary.com/ramimustaklem/image/upload/v1683389673/portfolio-v1/cv.ramim.dev__q9gqvj.png
 ---
 
-![PORTFOLIO-V1](/public/images/projects/portfolio-v1.jpeg)
+![PORTFOLIO-V1](https://res.cloudinary.com/ramimustaklem/image/upload/v1683389673/portfolio-v1/cv.ramim.dev__q9gqvj.png)
+_[Website](https://cv.ramim.dev/)_
 
 A mobile-first responsive personal portfolio website project based on the JAM stack, with Gatsby, Strapi CMS, and hosted on Netlify static sites.
 

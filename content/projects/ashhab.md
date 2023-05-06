@@ -16,11 +16,16 @@ tags:
   - Mobile first
   - Responsive
   - Cloudflare
-ogImagePath: /public/images/projects/ashhab.jpeg
+ogImagePath: https://res.cloudinary.com/ramimustaklem/image/upload/v1683369168/ashhab/shopfront.png
 ---
 
-![ASHHAB](/public/images/projects/ashhab.jpeg)
+![ASHHAB](https://res.cloudinary.com/ramimustaklem/image/upload/v1683369168/ashhab/shopfront.png)
+_[Website](https://store.ashhab.net/)_
 
 Currently in the process of migrating the live site to the new site...
 
 It consists of a main repository, that has a bash file that will clone and install 3 different repositories, API, Admin CMS and the Shop front.
+
+The API is a Restful API built with Laravel that is consumed by the administration panel, a NextJS project, and shop front, which is also a NextJS project.
+
+Functionalities include customer sign up and authentication, cart and checkout, and also simple and variable product types.

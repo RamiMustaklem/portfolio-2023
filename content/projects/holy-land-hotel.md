@@ -12,10 +12,11 @@ tags:
   - jQuery
   - CSS
   - Responsive
-ogImagePath: /public/images/projects/hlh.jpeg
+ogImagePath: https://res.cloudinary.com/ramimustaklem/image/upload/v1683370341/HolyLandHotel/holylandhotel.com__aj98zd.png
 ---
 
-![Holy Land Hotel](/public/images/projects/hlh.jpeg)
+![Holy Land Hotel](https://res.cloudinary.com/ramimustaklem/image/upload/v1683370341/HolyLandHotel/holylandhotel.com__aj98zd.png)
+_[HLH Website](https://holylandhotel.com/)_
 
 A fully responsive informational website for Holy Land Hotel in East Jerusalem.
 

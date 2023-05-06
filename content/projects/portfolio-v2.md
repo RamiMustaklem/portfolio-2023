@@ -15,9 +15,10 @@ tags:
   - Mobile first
   - Responsive
   - Cloudflare
-ogImagePath: /public/images/projects/portfolio-v2.jpeg
+ogImagePath: https://res.cloudinary.com/ramimustaklem/image/upload/v1683370455/portfolio-v2/ramim-portfolio.netlify.app__db8tkb.png
 ---
 
-![PORTFOLIO-V2](/public/images/projects/portfolio-v2.jpeg)
+![PORTFOLIO-V2](https://res.cloudinary.com/ramimustaklem/image/upload/v1683370455/portfolio-v2/ramim-portfolio.netlify.app__db8tkb.png)
+_[Website](https://ramim.dev/)_
 
 A mobile-first responsive personal portfolio, and blog, static website project built on Astro framework, without a Backend though all data based on Markdown, and hosted on Netlify.
