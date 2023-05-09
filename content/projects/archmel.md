@@ -17,10 +17,10 @@ tags:
   - Mobile first
   - Responsive
   - Cloudflare
-ogImagePath: https://res.cloudinary.com/ramimustaklem/image/upload/v1683369401/archmel/archmel.com__ta3pyt.png
+ogImagePath: https://res.cloudinary.com/ramimustaklem/image/upload/c_scale,q_auto:good,w_360/v1683369401/archmel/archmel.com__ta3pyt.jpg
 ---
 
-![Arch Mel](https://res.cloudinary.com/ramimustaklem/image/upload/v1683369401/archmel/archmel.com__ta3pyt.png)
+![Arch Mel](https://res.cloudinary.com/ramimustaklem/image/upload/c_scale,q_auto:good,w_360/v1683369401/archmel/archmel.com__ta3pyt.jpg)
 _[Website](https://archmel.com/)_
 
 A website to digitize church books and texts in order to be accessible online for whoever needs them

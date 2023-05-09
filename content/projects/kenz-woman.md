@@ -22,10 +22,10 @@ tags:
   - Caching
   - Image Optimization
   - SSL
-ogImagePath: https://res.cloudinary.com/ramimustaklem/image/upload/v1683370307/kenz/kenzwoman.com__d8_ad_d9_88_d9_84-_d9_83_d9_86_d8_b2__ttisdx.png
+ogImagePath: https://res.cloudinary.com/ramimustaklem/image/upload/c_scale,q_auto:good,w_720/v1683370307/kenz/kenzwoman.com__d8_ad_d9_88_d9_84-_d9_83_d9_86_d8_b2__ttisdx.jpg
 ---
 
-![Kenz Woman](https://res.cloudinary.com/ramimustaklem/image/upload/v1683370307/kenz/kenzwoman.com__d8_ad_d9_88_d9_84-_d9_83_d9_86_d8_b2__ttisdx.png)
+![Kenz Woman](https://res.cloudinary.com/ramimustaklem/image/upload/c_scale,q_auto:good,w_720/v1683370307/kenz/kenzwoman.com__d8_ad_d9_88_d9_84-_d9_83_d9_86_d8_b2__ttisdx.jpg)
 
 [**_Kenz Woman_**](https://kenzwoman.com) is an E-commerce website, migrated from a barely functional Magento deployment to WordPress/WooCommerce, selling around thousands of Riyals per month.
 

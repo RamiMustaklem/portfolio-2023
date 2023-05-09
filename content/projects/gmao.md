@@ -23,10 +23,10 @@ tags:
   - Git
   - JIRA
   - Logging
-ogImagePath: https://res.cloudinary.com/ramimustaklem/image/upload/v1594033222/medium_smartglobe_63bae7ea50.png
+ogImagePath: https://res.cloudinary.com/ramimustaklem/image/upload/q_auto:good/v1683369701/gmao/medium_smartglobe_63bae7ea50_lo9i6s.jpg
 ---
 
-![GMAO](https://res.cloudinary.com/ramimustaklem/image/upload/v1594033221/large_smartglobe_63bae7ea50.png)
+![GMAO](https://res.cloudinary.com/ramimustaklem/image/upload/q_auto:good/v1683369701/gmao/medium_smartglobe_63bae7ea50_lo9i6s.jpg)
 _[SmartGlobe](https://smartglobe.fr)_
 
 **GMAO** is an IOT Maintenance and Ticketing full stack system for tracking malfunctioning IOT devices and automatically reporting them with tickets.

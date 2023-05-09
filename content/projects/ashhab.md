@@ -16,10 +16,10 @@ tags:
   - Mobile first
   - Responsive
   - Cloudflare
-ogImagePath: https://res.cloudinary.com/ramimustaklem/image/upload/v1683369168/ashhab/shopfront.png
+ogImagePath: https://res.cloudinary.com/ramimustaklem/image/upload/c_scale,q_auto:good,w_760/v1683369168/ashhab/shopfront.jpg
 ---
 
-![ASHHAB](https://res.cloudinary.com/ramimustaklem/image/upload/v1683369168/ashhab/shopfront.png)
+![ASHHAB](https://res.cloudinary.com/ramimustaklem/image/upload/c_scale,q_auto:good,w_760/v1683369168/ashhab/shopfront.jpg)
 _[Website](https://store.ashhab.net/)_
 
 Currently in the process of migrating the live site to the new site...

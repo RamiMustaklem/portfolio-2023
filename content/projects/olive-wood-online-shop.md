@@ -41,3 +41,5 @@ I've also written about the process I've done to optimize and get very low loadi
 You can also view the images taken for testing the site performance [here](https://collection.cloudinary.com/ramimustaklem/ce074e0a22f8221cc0d9716625534b67).
 
 I also started porting the frontend part of the site to a Gatsby static site, connecting the WP as a headless backend API, but decided to discontinue both projects, the online shop and the Gatsby frontend, since I did not see any success with the shop due to many factors during that period of covid.
+
+![GTmetrix Performance](https://res.cloudinary.com/ramimustaklem/image/upload/v1683369958/hlot/small_gtmetrix_a39e467e2c_ig4azt.jpg)
