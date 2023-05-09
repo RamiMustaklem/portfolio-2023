@@ -33,9 +33,16 @@ export default defineConfig({
     port: SERVER_PORT
   },
   site: BASE_URL,
-  integrations: [sitemap(), tailwind({
-    config: {
-      applyBaseStyles: false
-    }
-  })]
+  integrations: [
+    sitemap({
+      changefreq: 'daily',
+      priority: 0.7,
+      lastmod: new Date('2023-05-09'),
+    }),
+    tailwind({
+      config: {
+        applyBaseStyles: false
+      }
+    })
+  ]
 });
