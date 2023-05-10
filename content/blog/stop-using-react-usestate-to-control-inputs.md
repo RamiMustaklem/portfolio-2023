@@ -28,3 +28,84 @@ If you have more than a few inputs or forms in your application, I would recomme
 ### Conclusion
 
 If a component is a form and it has a few inputs with onChange function, it will re-render the whole component once a change happens.
+
+### Examples
+
+#### Using Form onSubmit function without any state or ref
+
+```tsx
+export default function FormFields() {
+  const onFormSubmitHandler = useCallback(
+    (e: SyntheticEvent<HTMLFormElement, SubmitEvent>) => {
+      e.preventDefault();
+      const target = e.target as FormElements<MyFields>;
+      console.log("target.field1.value", target.field1.value);
+      console.log("target.field2.value", target.field2.value);
+      console.log("target.field3.value", target.field3.value);
+      target.reset();
+    },
+    []
+  );
+
+  return (
+    <form onSubmit={onFormSubmitHandler}>
+      <label htmlFor="field-1" key="field-1">
+        <p>Field 1</p>
+        <input type="text" id="field-1" name="field1" required />
+      </label>
+
+      <label htmlFor="field-2" key="field-2">
+        <p>Field 2</p>
+        <input type="text" id="field-2" name="field2" required />
+      </label>
+
+      <label htmlFor="field-3" key="field-3">
+        <p>Field 3</p>
+        <input type="text" id="field-3" name="field3" required />
+      </label>
+
+      <div>
+        {/* Default role for the button inside a form is submit */}
+        {/* Either this or use <input type="submit" /> */}
+        <button>Submit</button>
+      </div>
+    </form>
+  );
+}
+```
+
+#### Using React Hook Form library
+
+```tsx
+export default function HookForm() {
+  const { register, handleSubmit, watch } = useForm<MyFields>({});
+
+  const onSubmit = (data: MyFields) => console.log(data);
+
+  // Watching a field returns realtime field updates
+  console.log(watch("firstName"));
+
+  return (
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <label htmlFor="firstName" key="firstName">
+        <p>Field 1</p>
+        <input type="text" {...register("firstName", { required: true })} />
+      </label>
+
+      <label htmlFor="lastName" key="lastName">
+        <p>Field 2</p>
+        <input type="text" {...register("lastName", { required: true })} />
+      </label>
+
+      <label htmlFor="username" key="username">
+        <p>Field 3</p>
+        <input type="text" {...register("username", { required: true })} />
+      </label>
+
+      <div>
+        <button>Submit</button>
+      </div>
+    </form>
+  );
+}
+```
