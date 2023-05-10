@@ -16,6 +16,8 @@ tags:
   - Responsive
   - Cloudflare
   - Cloudinary
+  - Lighthouse
+  - Unlighthouse
 ogImagePath: https://res.cloudinary.com/ramimustaklem/image/upload/ar_4:3,c_lpad,dpr_auto,f_auto,q_auto,w_160/v1683370455/portfolio-v2/ramim-portfolio.netlify.app__db8tkb.png
 ---
 
@@ -31,4 +33,6 @@ Images hosted on Cloudinary.
 
 Astro is an amazing framework designed for speed, for generating static and efficient html pages, using the UI component of your choice.
 
-![100 Lighthouse Scores](https://res.cloudinary.com/ramimustaklem/image/upload/c_scale,q_auto:good,w_360/v1683651411/portfolio-v2/ramim.dev_portfolio_lighthouse_100_scores_b1b2md.jpg)
+Using __[Unlighthouse.dev](https://unlighthouse.dev/)__ in order to bulk scan all site routes using Lighthouse.
+
+![Unlighthouse Scores](https://res.cloudinary.com/ramimustaklem/image/upload/c_scale,f_auto,q_auto,w_600/v1683704742/portfolio-v2/unlighthouse_report_gjjiv6.png)
