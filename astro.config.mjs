@@ -38,7 +38,7 @@ export default defineConfig({
     sitemap({
       changefreq: 'daily',
       priority: 0.7,
-      lastmod: new Date('2023-05-09'),
+      lastmod: new Date('2023-05-10'),
     }),
     tailwind({
       config: {
