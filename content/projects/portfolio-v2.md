@@ -16,10 +16,10 @@ tags:
   - Responsive
   - Cloudflare
   - Cloudinary
-ogImagePath: https://res.cloudinary.com/ramimustaklem/image/upload/c_scale,q_auto:good,w_360/v1683370455/portfolio-v2/ramim-portfolio.netlify.app__db8tkb.jpg
+ogImagePath: https://res.cloudinary.com/ramimustaklem/image/upload/ar_4:3,c_lpad,dpr_auto,f_auto,q_auto,w_160/v1683370455/portfolio-v2/ramim-portfolio.netlify.app__db8tkb.png
 ---
 
-![PORTFOLIO-V2](https://res.cloudinary.com/ramimustaklem/image/upload/c_scale,q_auto:good,w_360/v1683370455/portfolio-v2/ramim-portfolio.netlify.app__db8tkb.jpg)
+![PORTFOLIO-V2](https://res.cloudinary.com/ramimustaklem/image/upload/ar_3:3,b_rgb:f9f9f9,c_lpad,dpr_auto,co_rgb:f0f0f0,e_shadow:30,x_1,y_1,f_auto,q_auto,r_5,w_320/v1683370455/portfolio-v2/ramim-portfolio.netlify.app__db8tkb.png)
 _[Website](https://ramim.dev/)_
 
 A mobile-first responsive simple personal portfolio, and blog, to showcase and post my own projects and articles.
