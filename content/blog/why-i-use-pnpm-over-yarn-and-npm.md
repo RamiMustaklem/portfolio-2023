@@ -67,3 +67,7 @@ PNPM uses a yaml file structure to track package versions and checksum verificat
 
 Ever since I started using PNPM, I felt the difference in performance, especially on a slow connection. If you want to use a more disk efficient, performant and reliable package manager, go for PNPM.
 You can check out their [website](https://pnpm.io) for more data and info.
+
+----------------------------------
+
+*Using React `useState` to control form inputs? Learn [here](/blog/stop-using-react-usestate-to-control-inputs) on why it's not the best practice.*

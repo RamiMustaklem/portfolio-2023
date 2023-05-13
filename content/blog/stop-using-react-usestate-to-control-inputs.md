@@ -109,3 +109,7 @@ export default function HookForm() {
   );
 }
 ```
+
+----------------------------------
+
+*Do you still use npm? Read my take [here](/blog/why-i-use-pnpm-over-yarn-and-npm) on why I use pnpm over npm and yarn.*
