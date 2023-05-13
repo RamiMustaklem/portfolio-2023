@@ -36,9 +36,55 @@ export default defineConfig({
   site: BASE_URL,
   integrations: [
     sitemap({
-      changefreq: 'daily',
-      priority: 0.7,
-      lastmod: new Date('2023-05-10'),
+      serialize(item) {
+        item.changefreq = 'monthly';
+        item.priority = 0.7;
+        item.lastmod = new Date('2023-05-01');
+
+        if (/blog\/$/.test(item.url)) {
+          item.changefreq = 'weekly';
+          item.lastmod = new Date('2023-05-10');
+          item.priority = 0.9;
+        }
+
+        if (/projects\/$/.test(item.url)) {
+          item.changefreq = 'monthly';
+          item.lastmod = new Date('2023-05-10');
+          item.priority = 0.7;
+        }
+
+        if (/why-i-use-pnpm-over-yarn-and-npm|stop-using-react-usestate-to-control-inputs/.test(item.url)) {
+          item.changefreq = 'monthly';
+          item.lastmod = new Date('2023-05-13');
+          item.priority = 0.9;
+        }
+
+        if (/ashhab/.test(item.url)) {
+          item.changefreq = 'monthly';
+          item.lastmod = new Date('2023-05-09');
+          item.priority = 0.9;
+        }
+
+        if (/holy-land-hotel|archmel|portfolio-v2/.test(item.url)) {
+          item.changefreq = 'monthly';
+          item.lastmod = new Date('2023-05-10');
+          item.priority = 0.9;
+        }
+
+        if (/portfolio-v1/.test(item.url)) {
+          item.changefreq = 'monthly';
+          item.lastmod = new Date('2023-05-10');
+          item.priority = 0.9;
+        }
+
+        if (/gmao|kenz-woman|olive-wood-online-shop/.test(item.url)) {
+          item.changefreq = 'monthly';
+          item.lastmod = new Date('2023-05-09');
+          item.priority = 0.7;
+        }
+
+        return item;
+      },
     }),
     tailwind({
       config: {
