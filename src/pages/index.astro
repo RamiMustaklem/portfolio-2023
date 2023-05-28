@@ -2,14 +2,16 @@
 import PageMeta from "../components/PageMeta.astro";
 import PageLayout from "../layouts/PageLayout.astro";
 import Intro from "../components/Intro.astro";
-import AboutTheTheme from "../components/AboutTheTheme.astro";
+import IntroTitle from "../components/IntroTitle.astro";
+import Skills from "../components/Skills.astro";
 import { SITE_TITLE } from "../config";
 ---
 
 <PageLayout>
-  <PageMeta title={`${SITE_TITLE} | Full Stack Web Ninja`} slot="meta" />
+  <PageMeta title={`${SITE_TITLE} | Full Stack Web Developer`} slot="meta" />
   <Fragment slot="main">
+    <IntroTitle />
+    <Skills />
     <Intro />
-    <AboutTheTheme />
   </Fragment>
 </PageLayout>

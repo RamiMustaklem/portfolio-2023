@@ -1,0 +1,159 @@
+---
+const day2day = [
+  { 'label': 'HTML', 'icon': '/public/images/tech/regular-use-tech/html.svg' },
+  { 'label': 'CSS', 'icon': '/public/images/tech/regular-use-tech/css.svg' },
+  { 'label': 'JavaScript', 'icon': '/public/images/tech/regular-use-tech/javascript.svg' },
+  { 'label': 'TypeScript', 'icon': '/public/images/tech/regular-use-tech/typescript.svg' },
+  { 'label': 'JSON', 'icon': '/public/images/tech/regular-use-tech/json.svg' },
+  { 'label': 'React', 'icon': '/public/images/tech/regular-use-tech/react.svg' },
+  { 'label': 'Next.JS', 'icon': '/public/images/tech/regular-use-tech/nextjs.svg' },
+  { 'label': 'React Query', 'icon': '/public/images/tech/regular-use-tech/react-query.svg' },
+  { 'label': 'Tailwind CSS', 'icon': '/public/images/tech/regular-use-tech/tailwind.svg' },
+  { 'label': 'Angular', 'icon': '/public/images/tech/regular-use-tech/angular.svg' },
+  { 'label': 'Laravel', 'icon': '/public/images/tech/regular-use-tech/laravel.svg' },
+  { 'label': 'Jest', 'icon': '/public/images/tech/regular-use-tech/jest.svg' },
+];
+
+const regularConcepts = [
+  { 'label': 'RESTful APIs', 'icon': '/public/images/tech/regular-use-concepts/rest.svg' },
+  { 'label': 'Authentication', 'icon': '/public/images/tech/regular-use-concepts/lock-icon.svg' },
+  { 'label': 'Authorization', 'icon': '/public/images/tech/regular-use-concepts/authentication-icon.svg' },
+  { 'label': 'OAuth', 'icon': '/public/images/tech/regular-use-concepts/oauth.svg' },
+  { 'label': 'Serverless', 'icon': '/public/images/tech/regular-use-concepts/aws-lambda.svg' },
+];
+
+const cloud = [
+  { 'label': 'AWS', 'icon': '/public/images/tech/cloud/aws.svg' },
+  { 'label': 'Azure', 'icon': '/public/images/tech/cloud/azure.svg' },
+  { 'label': 'Cloudinary', 'icon': '/public/images/tech/cloud/cloudinary.svg' },
+];
+
+const tools = [
+  { 'label': 'Git', 'icon': '/public/images/tech/tools/git.svg' },
+  { 'label': 'GitHub', 'icon': '/public/images/tech/tools/github.svg' },
+  { 'label': 'BitBucket', 'icon': '/public/images/tech/tools/bitbucket.svg' },
+  { 'label': 'JIRA', 'icon': '/public/images/tech/tools/jira.svg' },
+  { 'label': 'VS Code', 'icon': '/public/images/tech/tools/vscode.svg' },
+  { 'label': 'ESList', 'icon': '/public/images/tech/tools/eslint.svg' },
+  { 'label': 'Prettier', 'icon': '/public/images/tech/tools/prettier.svg' },
+  { 'label': 'NPM', 'icon': '/public/images/tech/tools/npm.svg' },
+  { 'label': 'Yarn', 'icon': '/public/images/tech/tools/yarn.svg' },
+];
+
+const professional = [
+  { 'label': 'Redux', 'icon': '/public/images/tech/professional-experience/redux.svg' },
+  { 'label': 'React Native', 'icon': '/public/images/tech/professional-experience/react-native.svg' },
+  { 'label': 'Expo', 'icon': '/public/images/tech/professional-experience/expo.svg' },
+  { 'label': 'ExpressJS', 'icon': '/public/images/tech/professional-experience/expressjs.svg' },
+  { 'label': 'NestJS', 'icon': '/public/images/tech/professional-experience/nestjs.svg' },
+  { 'label': 'NodeJS', 'icon': '/public/images/tech/professional-experience/nodejs.svg' },
+  { 'label': 'ReactiveX', 'icon': '/public/images/tech/professional-experience/reactivex.svg' },
+  { 'label': 'Storybook', 'icon': '/public/images/tech/professional-experience/sb.svg' },
+  { 'label': 'MongoDB', 'icon': '/public/images/tech/professional-experience/mongodb.svg' },
+  { 'label': 'Boostrap', 'icon': '/public/images/tech/professional-experience/bootstrap.svg' },
+  { 'label': 'WordPress', 'icon': '/public/images/tech/professional-experience/wp.svg' },
+  { 'label': 'WooCommerce', 'icon': '/public/images/tech/professional-experience/wc.svg' },
+  { 'label': 'Nginx', 'icon': '/public/images/tech/professional-experience/nginx.svg' },
+  { 'label': 'Astro Framework', 'icon': '/public/images/tech/professional-experience/astro-icon-dark.svg' },
+  { 'label': 'Python', 'icon': '/public/images/tech/professional-experience/python.svg' },
+  { 'label': 'Django', 'icon': '/public/images/tech/professional-experience/django.svg' },
+  { 'label': 'Redis', 'icon': '/public/images/tech/professional-experience/redis.svg' },
+  { 'label': 'jQuery', 'icon': '/public/images/tech/professional-experience/jquery.svg' },
+];
+---
+
+<div class="prose p-0 dark:prose-invert">
+  <p>
+    Tech I use on my day to day and side project work:
+  </p>
+  <ul class="mt-5 list-none ml-0 pl-0">
+    <li>
+      <strong>Regular day to day tech stack:</strong>
+      <ul class="flex flex-wrap justify-center items-center gap-x-4 sm:gap-x-6 md:gap-x-8 list-none pl-0">
+        {day2day.map((item) => {
+          return (
+            <li class="flex flex-col justify-center items-center">
+              <img src={item.icon} alt={item.label} class="w-12 h-12 m-0 bg-white" />
+              <p class="text-xs">{item.label}</p>
+            </li>
+          )
+        })}
+      </ul>
+    </li>
+
+    <li>
+      <strong>Regular day to day web concepts:</strong>
+      <ul class="flex flex-wrap justify-center items-center gap-x-4 sm:gap-x-8 md:gap-x-10 list-none pl-0">
+        {regularConcepts.map((item) => {
+          return (
+            <li class="flex flex-col justify-center items-center">
+              <img src={item.icon} alt={item.label} class="w-12 h-12 m-0 bg-white" />
+              <p class="text-xs">{item.label}</p>
+            </li>
+          )
+        })}
+      </ul>
+    </li>
+
+    <li>
+      <strong>Cloud Providers:</strong>
+      <ul class="flex flex-wrap justify-center items-center gap-8 sm:gap-12 md:gap-x-16 list-none pl-0">
+        {cloud.map((item) => {
+          return (
+            <li class="flex flex-col justify-center items-center">
+              <img src={item.icon} alt={item.label} class="w-12 h-12 m-0 bg-white" />
+              <p class="text-xs">{item.label}</p>
+            </li>
+          )
+        })}
+      </ul>
+    </li>
+
+    <li>
+      <strong>Tech Tools:</strong>
+      <ul class="flex flex-wrap justify-center items-center gap-4 sm:gap-8 md:gap-x-12 list-none pl-0">
+        {tools.map((item) => {
+          return (
+            <li class="flex flex-col justify-center items-center">
+              <img src={item.icon} alt={item.label} class="w-12 max-h-12 m-0 bg-white" />
+              <p class="text-xs">{item.label}</p>
+            </li>
+          )
+        })}
+      </ul>
+    </li>
+
+    <li>
+      <strong>Profressional Experience:</strong> (from high to low)
+      <ul class="flex flex-wrap justify-center items-center gap-4 sm:gap-8 md:gap-x-12 list-none pl-0">
+        {professional.map((item) => {
+          return (
+            <li class="flex flex-col justify-center items-center">
+              <img src={item.icon} alt={item.label} class="w-12 h-12 m-0 bg-white" />
+              <p class="text-xs">{item.label}</p>
+            </li>
+          )
+        })}
+      </ul>
+    </li>
+    <!-- <li>
+      <strong>Quality.</strong>
+      I care about code quality even if the project is functional as needed or I'm working alone. I like to write tests when needed, unit tests, component tests or e2e tests.
+    </li>
+    <li>
+      <strong>Performance.</strong>
+      I always take code performance into consideration, and run some tests to ensure high performance.
+    </li>
+    <li>
+      <strong>Mobile first mindset.</strong>
+      In today's web it's important to focus on the mobile, considering UI, UX and performance. Depending on the project's requirements.
+    </li>
+    <li>
+      <strong>Containers, Cloud & Automation.</strong>
+      I have experience using Amazon AWS's and Microsoft Azure's services, and deployment automation using Terraform. Docker and Docker Compose, Serverless technology.
+    </li>
+    <li>
+      <strong>Accessibility</strong> & Technical <strong>SEO</strong> is a very important aspect of every site and needs to be addressed properly with the necessary elements and schemas.
+    </li> -->
+  </ul>
+</div>

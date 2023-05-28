@@ -39,7 +39,7 @@ export default defineConfig({
       serialize(item) {
         item.changefreq = 'monthly';
         item.priority = 0.7;
-        item.lastmod = new Date('2023-05-01');
+        item.lastmod = new Date('2023-05-28');
 
         if (/blog\/$/.test(item.url)) {
           item.changefreq = 'weekly';
