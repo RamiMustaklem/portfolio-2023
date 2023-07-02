@@ -18,6 +18,7 @@ ogImagePath: https://res.cloudinary.com/ramimustaklem/image/upload/c_scale,q_aut
 ![Holy Land Hotel](https://res.cloudinary.com/ramimustaklem/image/upload/ar_3:3,b_rgb:f9f9f9,c_lpad,dpr_auto,co_rgb:f0f0f0,e_shadow:30,x_1,y_1,f_auto,q_auto,r_5,w_450/v1683370341/HolyLandHotel/holylandhotel.com__aj98zd.png)
 _[HLH Website](https://holylandhotel.com/)_
 
-A fully responsive informational website for Holy Land Hotel in East Jerusalem.
-
-Including photos (taken by myself) and info about room sizes and prices and hotel location, with a page for booking rooms on the website and sending an email to the reservation department.
+- Built a fully responsive website for a hotel I used to work in as a receptionist to support my education
+- I also included photos of the hotel with many that I took by myself
+- Info about room sizes and prices and hotel location
+- A page for booking rooms on the website and sending an email to the reservation department

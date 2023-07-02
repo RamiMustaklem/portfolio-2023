@@ -33,4 +33,4 @@ _[SmartGlobe](https://smartglobe.fr)_
 
 The backend is an ES6+ JavaScript API using Express.js, Mongo DB and RabbitMQ for event based messaging, JWT for authentication and authorization.
 
-The frontend is built with Angular 7, using TypeScript, Bootstrap 4, Angular Material components, forms and lazy loading modules.
+The frontend is built with Angular, using TypeScript, Bootstrap 4, Angular Material components, forms and lazy loading modules.
