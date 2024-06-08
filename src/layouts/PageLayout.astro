@@ -13,7 +13,7 @@ import GoogleFont from "./GoogleFont.astro";
 import FontAwesome from "./FontAwesome.astro";
 import ThemeScript from "./ThemeScript.astro";
 import GoogleAnalytics from "./GoogleAnalytics.astro";
-import MailerLite from "./MailerLite.astro";
+// import MailerLite from "./MailerLite.astro";
 import Favicon from "./Favicon.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
@@ -35,7 +35,7 @@ const isBuild = SCRIPT.includes("astro build");
     <GoogleFont />
     <ThemeScript />
     {isBuild && <GoogleAnalytics />}
-    <MailerLite />
+    <!-- <MailerLite /> -->
     <FontAwesome />
   </head>
 
