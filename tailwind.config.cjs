@@ -112,5 +112,5 @@ module.exports = {
       }),
     },
   },
-  plugins: [import("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography")],
 };
