@@ -20,7 +20,7 @@ tags:
   - Browsers
   - HTTP
   - CORS
-ogImagePath: https://unsplash.com/photos/matrix-movie-still-iar-afB0QQw
+ogImagePath: /images/blog/spa.jpg
 ---
 
 ![Photo of matrix by [Markus Spiske]](/images/blog/spa.jpg)
@@ -136,12 +136,18 @@ Keeping up and enhancing security takes time and effort, but by staying vigilant
 
 ### Resources
 
-- https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
-- https://developer.mozilla.org/en-US/docs/Glossary/HTTPS
-- https://web.dev/articles/samesite-cookies-explained
-- https://web.dev/articles/strict-csp
-- https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/CSRF_prevention
-- https://www.youtube.com/watch?v=fyTxwIa-1U0
+- [MDN Web Docs - Using HTTP cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
+- [MDN Web Docs - Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
+- [MDN Web Docs - HTTPS (HyperText Transfer Protocol Secure)](https://developer.mozilla.org/en-US/docs/Glossary/HTTPS)
+- [Web Dev - SameSite cookies explained](https://web.dev/articles/samesite-cookies-explained)
+- [Web Dev - Mitigate cross-site scripting (XSS) with a strict Content Security Policy (CSP)](https://web.dev/articles/strict-csp)
+- [MDN Web Docs - Cross-site request forgery (CSRF) prevention](https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/CSRF_prevention)
+- [YouTube - Session Vs JWT: The Differences You May Not Know!](https://www.youtube.com/watch?v=fyTxwIa-1U0)
+
+---
+
+### Related
+
+[“Session Cookie” VS “JWT”, WHAT are they and WHEN to use WHICH](/blog/session-vs-jwt-what-and-when-to-use-which)
 
 ---
