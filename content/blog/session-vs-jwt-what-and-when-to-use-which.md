@@ -11,6 +11,7 @@ tags:
   - API
   - Server
   - Security
+  - XSS
   - Authentication
   - Authorization
   - JWT
